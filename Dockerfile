@@ -1,3 +1,30 @@
+# # We specify the base image we need for our
+# # go application
+# FROM golang:1.12.0-alpine3.9
+
+# # Install dependencies required to git clone.
+# RUN apk update && \
+#     apk add --update git
+
+# # Getting go project code from repository
+# RUN git clone https://github.com/elidelima/desafio1-go-docker
+
+# # We specify that we now wish to execute 
+# # any further commands inside our /app
+# # directory
+# WORKDIR ./desafio1-go-docker
+
+# # we run go build to compile the binary
+# # executable of our Go program
+# RUN go build -o main .
+
+# # Our start command which kicks off
+# # our newly created binary executable
+# CMD ["./main"]
+
+
+## Second options
+
 # We specify the base image we need for our
 # go application
 FROM golang:1.12.0-alpine3.9
