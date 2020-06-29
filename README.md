@@ -5,4 +5,4 @@ Maratona Full Cycle - Desafio Go&amp;Docker
 docker build -t desafio1-go-docker .
 
 # Run
-docker run -p 8080:8081 -it desafio1-go-docker
+docker run -it desafio1-go-docker
